@@ -22,4 +22,4 @@ def lead_create(request):
         if form.is_valid():
             form.save()
             return redirect("/leads")
-    return render(request, 'leads/lead_create.html', {"form": form})
+    return render(request, "leads/lead_create.html", {"form": form})
