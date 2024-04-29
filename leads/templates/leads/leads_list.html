@@ -6,7 +6,7 @@
 	<h1>Leads...</h1>
 	{% for lead in leads %}
 
-	<a href="{% url 'leads:lead-detail' lead.pk %}">{{ lead.first_name }} {{ lead.last_name }}</a> Age: {{ lead.age }}<br><br>
+	<a href="{% url 'leads:lead-detail' lead.pk %}">{{ lead.first_name }} {{ lead.last_name }}</a> Age: {{ lead.age }}<br>
 
 	{% endfor %}
 

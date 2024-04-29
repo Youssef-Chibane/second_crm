@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from .models import *
 from .forms import *
 
+def landing_page(request):
+    return render(request, 'landing_page.html')
+
 
 def leads_list(request):
     # return HttpResponse("Hello World")
