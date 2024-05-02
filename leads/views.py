@@ -1,7 +1,6 @@
-from django.shortcuts import render, redirect, reverse
-from django.http import HttpResponse
-from .models import *
-from .forms import *
+from django.shortcuts import reverse
+from .models import Lead
+from .forms import LeadModelForm
 from django.views import generic
 
 
