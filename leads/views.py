@@ -4,16 +4,17 @@ from .models import Lead
 from .forms import LeadModelForm, CustomUserCreationForm
 from django.views import generic
 
+
+class LandingPageView(generic.TemplateView):
+    template_name = "landing_page.html"
+
+
 class SignupView(generic.CreateView):
     template_name = "registration/signup.html"
     form_class = CustomUserCreationForm
 
     def get_success_url(self):
-        return reverse("admin/logout/")
-
-
-class LandingPageView(generic.TemplateView):
-    template_name = "landing_page.html"
+        return reverse("leads")
 
 
 class LeadListView(generic.ListView):
