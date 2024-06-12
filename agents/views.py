@@ -37,3 +37,8 @@ class AgentDetailView(LoginRequiredMixin, generic.DetailView):
 class AgentUpdateView(LoginRequiredMixin, generic.UpdateView):
     template_name = "agents/agent_update.html"
     form_class = AgentModelForm
+
+
+
+class AgentDeleteView(LoginRequiredMixin, generic.DeleteView):
+    pass
