@@ -29,15 +29,11 @@ class AgentCreateView(LoginRequiredMixin, generic.CreateView):
 
 
 class AgentDetailView(LoginRequiredMixin, generic.DetailView):
-    template_name = "agents/agent_detail.html"
-    context_object_name = "agent"
-
+    pass
 
 
 class AgentUpdateView(LoginRequiredMixin, generic.UpdateView):
-    template_name = "agents/agent_update.html"
-    form_class = AgentModelForm
-
+    pass
 
 
 class AgentDeleteView(LoginRequiredMixin, generic.DeleteView):
